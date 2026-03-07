@@ -84,11 +84,10 @@ def difference_density_nned(P_ks, P_hf, S):
     ----------
     P_ks, P_hf : ndarray (nao, nao)   density matrices in AO basis
     S          : ndarray (nao, nao)   AO overlap matrix
-    n_elec     : int                  total number of electrons
 
     Returns
     -------
-    delta      : ndarray  eigenvalues of the orthogonalised ΔP
+    delta      : ndarray  eigenvalues of the orthogonalized ΔP
     ned        : float    number of electrons displaced (sum of δ > 0)
     """
     dP = P_ks - P_hf                          # Eq. 1
